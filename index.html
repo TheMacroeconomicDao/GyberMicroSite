@@ -5,12 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Gybernaty Community</title>
 	<link  href="css/gyber.css" media="screen" type="text/css" rel="stylesheet">
+	<!--- link  href="css/glow_on_hover.css" media="screen" type="text/css" rel="stylesheet" -->
 	<script src="lib/jquery-1.10.2.min.js" ></script>
 	<!--- script src="lib/jquery-ui-1.10.3.custom.min.js" ></script -->
 	<!--- script src="lib/jquery.ui.touch-punch.min.js" ></script -->
 	<script src="js/gyber_funck.js" ></script>
 </head> 
-<body>
+<body class='norm'>
 <div id="top_fix">
 	<div id="header">
 		<div class="logo">
@@ -19,19 +20,22 @@
 			</a>
 		</div>
 		<div id="header_right">
-			<div id="leng">ENG &#709;</div>
+			<div id="leng"><a href="index_ru.html">RUS &#709;</a></div>
 			<div id="dapp"> PDF </div>
 		</div>
 	</div>
 	<div id="menu_top">
+		<!--- div id="menu_button" class="mini">
+			<button>menu_button</button>
+		</div -->
 		<div id="menu_briefly" class="curr">
-			<a href="#briefly">Краткое описание</a>
+			<a href="#briefly">Short description</a>
 		</div>
 		<div id="menu_philosophy">
-			<a href="#philosophy">Философия</a>
+			<a href="#philosophy">Philosophy</a>
 		</div>
 		<div id="menu_experiment">
-			<a href="#experiment">Эксперимент</a>
+			<a href="#experiment">Experiment</a>
 		</div>
 		<div id="menu_aic" class="hidden">
 			<a href="#">Токеномика</a>
@@ -44,407 +48,383 @@
 </div>
 <div id="all">
 	<div id="top">
-		<img src="images/macroeconomic_dao.png" alt="image Macroeconomic Dao">
+		<img src="images/macroeconomic_dao_mini.png" class='mini' alt="image Macroeconomic Dao"></img >
+		<img src="images/macroeconomic_dao.png" class='norm' alt="image Macroeconomic Dao"></img>
 		<h1>Welcome&nbsp;to&nbsp;Future The&nbsp;Macroeconomic&nbsp;Dao</h1>
 	</div>
 	<div class="main">
 		<a name="briefly"></a>
-		<div class="text_block_scroll">
-			<h3>Краткое описание</h3>
+		<div class="text_block_scroll glow-on-hover">
+			<h3>Short description</h3>
 			<p>
-				<br>Эксперимент Gyber - это инициатива, которая объединяет криптографию, информатику, социологию и экономику для создания киберcоциальной корпорации - новой формы экономической единицы. Она направлена на создание механизма прямого социально-экономического взаимодействия между участниками, позволяющего сконцентрировать общественные и финансовые ресурсы для реализации масштабных глобальных проектов и эффективного управления ими. Эксперимент вращается вокруг социальной платформы Gyber, которая представляет собой социальную сеть, принадлежащую самим пользователям и управляемую ими через децентрализованную автономную организацию (DAO).
-				<br>
-				<br>Социальная платформа Gyber предоставляет базовые функции социальных сетей, такие как текстовые и голосовые чаты, общий доступ к файлам и видеохостинг. Платформа уделяет особое внимание безопасности данных и предлагает несколько уровней защиты данных, включая варианты шифрования на стороне клиента или шифрование на стороне сервера с использованием открытого ключа клиента. Платформа хранит объемные данные в сети IPFS, при этом дополнительное закрепление контента обеспечивается узлами, развернутыми в рамках эксперимента.
-				<br>
-				<br>Архитектура платформы спроектирована таким образом, чтобы быть открытой и масштабируемой, с различными точками ввода и вывода данных и несколькими ядрами. Каждый пользователь может внести свой собственный модуль кода или функцию, которые могут быть включены в узел и распространены среди заинтересованных сторон. Платформа поощряет масштабируемость сообщества, позволяя любому желающему добавлять к ней что-либо и позволяя сообществу поддерживать и распространять определенные дополнительные модули.
-				<br>
-				<br>На уровне стека платформа представляет собой многоязычный кроссплатформенный контейнеризированный кластером, управляемым участниками эксперимента. Различные ядра отвечают за определенные уровни процессов, и разработка этих ядер осуществляется на различных языках программирования: Rust, Java, TypeScrypt, Dart, Go и C++. Платформа подвергается параллельной разработке модулей и ядер, чтобы определить наиболее эффективный стек для различных задач и обеспечить гибкость при разработке долгосрочной архитектуры.
-				<br>
-				<br>Для управления экспериментом реализованы защищенные смарт-контракты на основе языка Solidity и библиотеки OpenZeppelin. Эти контракты включают токены управления и служебные токены для принятия решений и взаимодействия с платформой. Исходный код контрактов доступен на GitHub, а важные решения в рамках эксперимента принимаются с помощью механизмов предложения и голосования в контракте DAO. Прозрачность и безопасность обеспечиваются с помощью технологии блокчейн.
-				<br>
-				<br>Токеномика играет важную роль в эксперименте. Платформа предполагает реализацию множества внутренних токенов, однако существует основной токен сообщества GBR и утилити токен платформы GYBER.
-				<br>
-				<br>Утилити токен платформы требуемый для взаимодействия с платформой, Он производится при сжигании токен GBR. Gyber Community Token GBR - основной токен управления, требуемый для производства внутренних токенов эксперимента и управления экспериментом, принятия коллективных решений, изменения и расширения платформы.В ходе эксперимента большая часть всех существующих токенов будет распределена между четырьмя категориями держателей: сообществом разработчиков, участниками эксперимента, крупными инвесторами и фондами, участниками открытого рынка.Так же в рамках проекта будет создан резервный фонд для оптимизации процессов развёртывания эксперимента.
-				<br>
-				<br>Эксперимент проходит ряд этапов проекта, начиная с предложения идеи и обсуждения, переходя к накоплению средств, реализации проекта и, наконец, функционированию. У проектов могут быть внешние клиенты, которые используют фиатную валюту, специальные клиенты, которым предоставляются скидки с помощью токенов Gyber, и суперклиенты, которые получают еще большие скидки с помощью внутренних токенов конкретного проекта. Стейкинг токенов GBR или внутренних токенов проекта позволяет участникам получать репутацию и пассивный доход в рамках эксперимента.
-				<br>
-				<br>Внутренняя организация сообщества основана на личных и общественных интересах участников. Исполнители несут ответственность за управление проектом и обеспечение его функционирования, а решения принимаются путем голосования исполнителями. У исполнителей есть личные и общественные обязанности, и неэтичное поведение может привести к исключению из эксперимента. Взаимодействие между участниками происходит посредством дискуссий и закрытых групп, причем у каждого проекта есть своя выделенная группа. Эксперимент также включает различные типы DAO, включая Social DAO, Code DAO, Commerce DAO и Economic DAO, для облегчения принятия решений и реализации проектов.
-				<br>
-				<br>В целом, эксперимент Gyber направлен на создание децентрализованной и управляемой сообществом платформы, которая обеспечивает эффективное социально-экономическое взаимодействие, реализацию проектов и принятие решений. Он использует криптографию, информатику и технологию блокчейн для обеспечения безопасности данных, прозрачности и масштабируемости.
 
+				<br><b>Welcome to the future</b>
+				<br>
+				<br><b>Gybernaty</b>
+				<br><b>Community of advanced enthusiasts and developers</b>
+				<br>
+				<br><b>Revolution in corporate development</b>
+				<br>
+				<br>An open community where ideas become reality. Here you will find like-minded people who can help you realize your projects and unlock your potential. This is an association of people who are passionate about technology and striving for new discoveries! We create large-scale open source projects, research current technologies and help each other realize their ideas. Here you can find a platform for research, development and exchange of experience in completely different areas of the IT industry. Join us to become a part of the movement. Here you will find not only a team that will help you in the implementation of projects, but also real friends with whom you can share your ideas and successes.
+				<br>
+				<br><b>AiC - Artificial Intelligence and Blockchain Community</b>
+				<br>
+				<br><b>The future of artificial intelligence: a study that opens up new horizons</b>
+				<br>
+				<br>
+				<br>We are excited to present to you our project, AiC (Artificial Intelligence and Blockchain Community), which aims to create an open community for the development and utilization of artificial intelligence (AI) models within the blockchain environment. Our project leverages the power of DAO contracts to regulate the operation of these models, ensuring transparency and openness in their development and use.
+				<br>The problem we address is the costliness and complexity associated with developing and utilizing AI models, as well as the concerns surrounding privacy and security when using these models in different fields. AiC offers a solution by establishing an open community where participants can collaboratively create and utilize AI models in the blockchain environment. The utilization of DAO contracts ensures transparency, openness, and regulation of the AI models' operation.
+				<br>The advantages of AiC lie in the ability for participants to exchange knowledge and experience, while creating and utilizing AI models in the blockchain environment at minimal costs. Additionally, the use of DAO contracts enhances security and transparency throughout the process.
+				<br>AiC can be utilized for both commercial and non-commercial purposes, enabling the creation of AI models in various fields such as medicine, finance, transportation, and more.
+				<br>To develop high-quality AI models, we employ a range of programming languages, including Python, C++, Java, and others. We utilize popular libraries and frameworks like TensorFlow, PyTorch, Keras, Scikit-learn, and OpenCV. These tools allow us to create and train AI models, perform tasks such as deep learning, machine learning, computer vision, and more.
+				<br>Blockchain technology plays a vital role in our project, as we aim to create decentralized AI models that can run on the blockchain and be utilized in different applications. We leverage blockchain platforms such as Ethereum, Polkadot, Solana, and others to develop decentralized applications and smart contracts that regulate the operation of our AI models.
+				<br>By utilizing DAO contracts, we empower network participants to make decisions regarding AI model development and usage, as well as the fair distribution of rewards among participants. Furthermore, we explore the application of machine learning technology to improve the functioning of blockchain networks and enhance the efficiency of decentralized applications.
+				<br>To promote collaboration and community involvement, we embrace an open approach and leverage AGPL licenses, allowing the wider community to contribute to the development and improvement of our AI models. We believe that the collective efforts of community members will lead us to great achievements in AI and blockchain technologies.
+				<br>Dear investors, we are delighted to introduce our advanced and innovative company focusing on AI and blockchain solutions for society. AiC has already generated significant interest from investors, and we are preparing for investment rounds.
+				<br>Our first investment round will be private, specifically targeting large investors and funds. We will consider applications for participation and extend invitations to join this round. Through this round, we aim to attract substantial investments to expedite the development of our projects.
+				<br>The second investment round will take place on specialized token sale platforms. During this round, we will offer AiC tokens to a broader audience of investors. This round will adhere to the rules and requirements of the platforms, ensuring investor protection and transparency.
+				<br>The third and final investment round will occur on the open market of the multi-blockchain network. In this round, AiC tokens will be accessible to all interested investors, emphasizing maximum openness and project accessibility.
+				<br>Participating in our project provides significant advantages for each category of investors. For large investors and funds, participation in the first investment round grants access to new and promising technologies, innovative solutions, and the potential for profits through their development.
+				<br>For smaller investors, the second and third investment rounds present an opportunity to invest in a promising and rapidly-growing project. Investors will receive AiC tokens and have the potential to earn profits from their future price appreciation.
+				<br>Overall, our project holds tremendous potential for investors, and we invite you to join our team and contribute to the development of AI technologies in an open-access environment. Investing in AiC offers a unique opportunity to obtain high profits in the long term, as our project will continue to evolve over many years, providing a stable income stream for investors.
+				<br>Furthermore, the utilization of blockchain technology ensures the safety of investments. Our project guarantees complete transparency and security for all participants through the use of distributed ledger technology.
+				<br>By investing in AiC, you will contribute to the development of innovative technologies applicable in various aspects of life, from economics and finance to medicine and education. Together, we can make a significant impact on the future of humanity and create a world where AI and blockchain technologies are harnessed to achieve optimal outcomes across all domains.
+				<br>If you are interested in investing in AiC, please contact us for more detailed information about our project and how you can participate as an investor. We are available to answer all your questions and provide assistance to ensure you derive maximum benefits from your investment in AiC.
+				<br>Thank you for considering our project, and we look forward to the possibility of collaborating with you.
+				<br>
+				<br><i>Sincerely, The AiC Team</i>
+				<br>
+
+
+
+				<br>
 			</p>
 		</div>
 		
 		<a name="philosophy"></a>
 		<div class="text_block_scroll">
-			<h3>Философия</h3>
+			<h3>Philosophy</h3>
 			<p>
-				<br><b class="orange">О теории Киберсоциума</b>
-				<br>Перед вами документ который имеет одну цель - определить основные черты киберсоциального общества очертания вырисовывающейся его зари - рождения новой эры.
-				<br>Время, когда примерно половина планеты носит в кармане вычислительные устройства, мощность которых, на несколько порядков, превышает мощность всей вычислительной техники прошедшего столетия вместе взятой; сложно не назвать эпохой супер компьютеров. Но так как любая машина или компьютер является всегда лишь продолжением человека, точнее будет назвать это время эпохой супер коммуникации.
 				<br>
-				<br>Исключительной целью и возможностью общества является максимально эффективное объединение его участников в интересах самого общества. Процесс развития Человеческого социального механизма определяет себя как непрерывное развитие отношений между людьми и развитие это в силу масштаба глобального социума есть развитие бесконечно разнообразное.
+				<br><b>About cyber society!</b>
 				<br>
-				<br>Век информации ускорил процессы этого развития до буквально космических скоростей. главным образом из за того что информационные технологии механизмы и системы легко встраиваются в отношения между участниками социума, ускоряя, усложняя и расширяя эти отношения, способствуя тем самым их развитию. Таким образом по мере развития информационных технологических систем мы наблюдаем ускорение размытия в первую очередь географических, социальных и культурных границ в глобальной цивилизации, что в перспективе влечёт за собой стирание границ финансовых и экономических.
+				<br><b>This is a document that has one purpose - to define the main features of a cybersocial society. </b>
 				<br>
-				<br>Методы прошлого, сегодня отказывают, оказываются варварскими, требующими постоянных жертв со стороны общества и планеты в целом.
-				<br>Технологическое могущество человеческой цивилизации давно уже требует устойчивого и разумного управления общечеловеческим богатством, ресурсом и потенциалом, с чем явно не способна справиться ни одна из существующих сегодня социально-экономических формаций.
 				<br>
-				<br>Мы можем не пережить глобальных экономических и социальных потрясений ив то же время нам необходимо полноценное, разумное объединение в масштабах планеты, в то же время нам угрожает великая опасность глобального объединения экономики в интересах лишь некоторой части общества, при условии возрастания его (общества) разделения социального, что повлечёт за собой продолжение наблюдаемого цикла, кризисов и потрясений, неразрывно связанного с социально-экономической обстановкой новейшей истории.
 				<br>
-				<br><b class="orange">Структура и этика существующих компьютерных, сетевых систем и возможности для развития глобальной цивилизации.</b>
-				<br>Стремительное развитие технологий и в особенности электроники и информатики уже сегодня определяет основной вектор проблем связанных с информацией, её безопасным хранением и обменом. В наше время информация стала давно уже ценным ресурсом, который постоянно генерируется и перемещается по бесчисленным километрам сетевого пространства. В повседневной жизни все мы используем информационные технологии и даже те из нас, кто не связан с информатикой и электроникой напрямую, оказываются лично вовлечены в процесс генерации огромного количества данных, представляющих собой разного рода ценную информацию, легко используемую для всяческих манипуляций и так же легко монетизируемую.
+				<br>The time when approximately half of the planet carries in their pockets computing devices, the power of which, by several orders of magnitude, exceeds the power of all computing technology of the past century combined; It's hard not to call the era of supercomputers. But since any machine or computer is always just an extension of a person, it would be more accurate to call this time the era of super communication.
 				<br>
-				<br>Ценность данных, а следовательно и ценность контроля над их хранением и перемещением всё чаще рассматривается как общеизвестный факт, в то время когда хакеры не перестают показательно выявлять уязвимости даже в самых важных и казалось бы неуязвимых системах, тем самым показывая, что безопасность даже самых ценных данных всё ещё больше желаемое чем действительное. Блокчейн отчасти решает эту проблему уже сейчас и по мере развития индустрии и проникновения её в глубину реального сектора экономики абсолютное решение проблемы безопасности данных будет приближаться.
 				<br>
-				<br>Кроме утечки данных в результате деятельности хакеров и ошибок связанных с несовершенством оборудования и кода, мы имеем дело с утечкой существенно иного характера из достаточно надёжных, в плане информационной безопасности: закрытых, корпоративных, информационных социальных медиа сред разного рода ( соц-сети, мессенджеры, навигаторы, различные электронные сервисы и прочее ) . Большинство крупных IT компаний воспринимают аккаунты пользователей как корпоративную собственность, а огромные данные, постоянно генерируемые пользователями, как полноценный продукт компании. И с технической точки зрения это так и есть, в силу того что аккаунты создаваемые пользователями формируются и хранятся на собственных серверах компаний. Вероятно 99% известного широким массам интернет контента хранится на закрытых проприетарных серверах защищённых физически не хуже ( а скорее даже лучше) чем самые охраняемые военные объекты и конечно же это всё содержится за счёт пользователей сети.
+				<br>The exclusive goal and opportunity of the society is the most effective association of its participants in the interests of the society itself. The development process of the Human social mechanism defines itself as a continuous development of relations between people, and this development, due to the scale of the participants in the global society, is an infinitely diverse development.
 				<br>
-				<br>Фундаментальная, техническая концепция интернета проста - это множество компьютеров соединённых сетью. В действительности же интернет - это люди которые отправляют друг другу физические сигналы по средствам компьютерной сети, которые компьютер преобразует для нас в информацию требуемого нам вида.
-				<br>Конечно не все компьютеры в сети реальные пользователи, но без людей интернет не был бы живым, очевидно что он не мыслим без общества, ведь это и есть живой результат деятельности общества, в реальный момент времени, который без него не может существовать.
+				<br>The information age has accelerated the processes of this development to literally cosmic speeds. And the main reason for this is that information technologies, mechanisms and systems are easily integrated into relations between members of society, accelerating, complicating and expanding these relations, thereby contributing to their development. Thus, with the development of information technology systems, we are seeing an acceleration in the blurring, first of all, of geographical, social and cultural boundaries in the global civilization, which in the future entails the erasure of financial and economic boundaries.
 				<br>
-				<br>С этической точки зрения, данные создаваемые пользователями, есть как минимум их личная интеллектуальная собственность и личные данные, а присвоение этих данных устаревшими экономическими институтами, в силу временно сложившихся технических обстоятельств – есть вопиющий факт, сигнализирующий об отсталости гуманитарного развития современного общества от развития его технического.
+				<br>The methods of the past, failing today, turn out to be barbaric, requiring constant sacrifice on the part of society and the planet as a whole.
 				<br>
-				<br>Добавив сюда тот факт что 99% интернета работает на открытых (бесплатных) программных продуктах и стоят фундаментально на открытых линукс серверах, становится очевидна абсурдность захвата интернет пространства устаревшими экономическими институтами.
+				<br>The technological power of human civilization has long required sustainable and reasonable management of human wealth, resources and potential, and none of the existing socio-economic formations is able to cope with this task.
 				<br>
-				<br>Торговля данными пользователей ( не редко и личными ) в наше время уже явление устоявшееся, обыденное и вполне законное. Компании разрабатывают длинные пользовательские соглашения ( которые до сих пор почти никто не читает ) в которых берут с пользователей разного рода согласия, как например на обработку их персональных данных, что даёт юридическое право законно присваивать себе данные миллионов пользователей по всему миру, анализировать их и торговать ими.
-				<br>А многомиллионное сообщество реальных пользователей остаётся отстранённым от управления и контроля над собственными данными, что в долгосрочной перспективе ведёт к разложению основополагающих принципов свободы личной информации, безопасности и контроля личных данных, свободы общества, и всячески тормозит и угнетает процесс исторического социально-экономического развития общества.
 				<br>
-				<br>Очевидно что с точки зрения этики, пользователь является единоличным обладателем всех прав на генерируемый им контент включая мета данные и любые другие типы данных которые он производит, не говоря уже о неприкосновенности личной переписки, интереса проявляемого в сети и прочего. Безусловно, многие технические продукты, использующие данные пользователей, предоставляют удобные, полезные и интересные для пользователей функции, но очевидно что все они должны быть подключаемы и отключаемы по желанию, а механизм их действия должен быть прозрачен, обеспечивать безопасность данных пользователя и контроль, а подтверждением этому должен служить открытый исходный код продукта.
+				<br>We may not survive global economic and social upheavals and we need a full-fledged, reasonable association on a planetary scale, at the same time we are in great danger of a global unification of the economy in the interests of only a certain part of society, provided that its (society) social division increases, which will entail followed by the continuation of the observed cycle, crises and upheavals, inextricably linked with the socio-economic situation of recent history.
 				<br>
-				<br>Так же очень важный момент индивидуальная гибкость и изменяемость сервисов. Пользователь должен иметь полный контроль над используемой лично им частью общей системы и возможности вносимых пользователем изменений должны быть неограниченны в пределах его личной части системы. Так же неограниченны должны быть индивидуальные возможности расширения системы, система должна быть расширяема во всех направлениях.
 				<br>
-				<br>Главная проблема интернета в том, что средства манипуляции данными разного рода, необходимые обществу для удобного и эффективного взаимодействия, в основном централизованы и принадлежат традиционным, закрытым, иерархическим, корпоративным структурам. И проблема эта прежде гуманитарная чем техническая по причине того что обществу прежде необходимо глубоко осмыслить важные социально-экономические явления, конечно в том числе и технического характера, но с точки зрения философии, этики, истории, социологии и экономики, что бы сформировать достаточно целостную гуманитарную систему, отвечающую современным требованиям, способную стать основой для технической реализации открытых децентрализованных информационных социально-экономических систем принадлежащих всем пользователям.
+				<br>Structure and ethics of existing computer, network systems and opportunities for the development of global civilization.
 				<br>
-				<br>Развитие гуманитарной теории описывающей механизм глобального Человеческого организма ( общества ) как целостную социально экономическую систему, задаст движение определению новых направлений для формирования и развития новых, прикладных, направлений экономической науки.
+				<br>The rapid development of technology, and especially electronics and computer science, already today determines the main vector of problems related to information, its safe storage and exchange.
 				<br>
-				<br>По мере развития и проникновения информационных технологий глубже в глобальную социально-экономическую среду, всё более важной становится их роль, и нарастает конкуренция в области разработки и проектирования информационных продуктов. Наблюдаются попытки со стороны достаточно мощных, уже вполне сформировавшихся глобальных корпоративных структур монополизировать всемирный рынок разработки ПО, но индивидуальные особенности области IT, такие как общая доступность, широта и глубина, скорость развития и эволюции, делают это практически невозможным в отличие от других секторов экономики.
+				<br>In our time, information has long been a valuable resource that is constantly generated and moved across countless kilometers of network space. In everyday life, we all use information technology, and even those of us who are not directly related to computer science and electronics are personally involved in the process of generating a huge amount of data, which is all sorts of valuable information that is easily used for all sorts of manipulations and just as easily monetized. .
 				<br>
-				<br>В следствии этого мы наблюдаем на рынке всё более уравновешивающуюся борьбу в которой, основными конкурирующими подходами к разработке программного обеспечения являются так называемые: открытый код ( FREE ) и закрытый код( NONFREE ). Их же можно определить как централизованный или корпоративный подход и децентрализованный общественный подход, как коммерческий и бесплатный.
+				<br>The value of data, and therefore the value of control over its storage and movement, is increasingly seen as a well-known fact, at a time when hackers do not cease revealing vulnerabilities in even the most important and seemingly invulnerable systems, thereby showing that the security of even the most valuable data more wishful thinking than actual.
 				<br>
-				<br>История разработки программного обеспечения как самостоятельно развивающейся прикладной области хотя и не так велика, однако развитие данной области прошло уже определённый, не малый путь эволюционного преобразования.
+				<br>Blockchain partially solves this problem now, and as the industry develops and penetrates into the depths of the real sector of the economy, the absolute solution to the problem of data security will approach.
 				<br>
-				<br>Сама компьютерная наука как таковая начинала своё развитие как закрытая, доступная только корпорациям и правительствам, область технологий. Компьютеры были дорогостоящими громоздкими машинами имеющимися в основном у крупных технических университетов и корпораций.
 				<br>
-				<br>Программное обеспечение так же полностью было корпоративным и разрабатывалось можно сказать индивидуально под каждый компьютер, практически это касалось всего софта который разрабатывался тогда индивидуально под каждую машину исходя из конкретных задач использования. Этот этап мы можем грубо определить как начальный, за ним последовал этап ускорения развития информационных технологий абстрактно его можно определить как время когда компьютер становится доступным для большего числа разработчиков. В это время расширилась конкуренция в области разработки ПО и определились два основных конкурирующих течения во всемирной разработке программного обеспечения.
+				<br>In addition to data leakage as a result of the activities of hackers and errors associated with the imperfection of equipment and code, we are dealing with a significantly different leakage;  from quite reliable in terms of information security closed, corporate, information, social media environments of various kinds (social networks, instant messengers, navigators, various electronic services, etc.).
 				<br>
-				<br>Далее следует некий этап становления этих двух подходов и уравновешивание их влияния на общий ход глобальной эволюции программного обеспечения и связанных с этим социально-экономических преобразований. Итогом преодоления этих абстрактных этапов развития, мы наблюдаем небывалый всплеск активности в области OPEN SOURCE разработки, повышение качества и юзабилити открытых программных продуктов и расширение области их применения и существенное увеличение количества пользователей.
+				<br>Most large IT companies consider user accounts as corporate property, and the huge data constantly generated by users as a full-fledged product of the company. And from a technical point of view, this is true, due to the fact that the accounts created by users are formed and stored on the companies' own servers. Probably 99% of the Internet content known to the broad masses is stored on closed proprietary servers that are physically protected no worse (or rather even better) than the most protected military facilities, and of course this is all maintained at the expense of network users.
 				<br>
-				<br>OPEN SOURCE всё активнее способствует появлению революционных технологий. Мы можем даже наблюдать целый виток эволюции глобальных социально-экономических отношений в обществе непосредственно связанный и питаемый глобальным OPEN SOURCE сообществом и его идеями, генеральным вектором которых является открытое всестороннее развитие программного обеспечения и общества в целом, как единого механизма разумного взаимодействия Человечества.
+				<br>The fundamental, technical concept of the Internet is simple - it is a set of computers connected by a network. In reality, the Internet is people who send physical signals to each other through a computer network, which the computer converts for us into information of the type we need.
 				<br>
-				<br>Ещё одна из основных, современных, надвигающихся на общества проблем состоит в нарастании централизованного контроля над распространением идей.
-				<br>Устаревшие экономические институты, в силу своего безвыходного, но достаточно мощного положения, стремятся быстро совершенствовать собственные механизмы контроля и мониторинга за обществом, с целью выявления актуальных, передовых, социально значимых идей и проектов и устранения их активности до того как они распространяться в обществе.
+				<br>Of course, not all computers on the network are real users, but without people, the Internet would not be alive, it is obvious that it is not conceivable without society, because this is the living result of the activity of society, at a real moment in time, which cannot exist without it.
 				<br>
-				<br>В совокупности с тем что подавляющее большинство крупных, ресурсоёмких проектов инициируются и финансируются теми же устаревшими социально-экономическими институтами, мы имеем в основном мир отражающий исключительно интересы этих устаревших институтов и крайне реакционный ко всякого рода революционным, фундаментальным изменениям, а следовательно и к развитию общества в целом.
+				<br>From an ethical point of view, data created by users is at least their personal intellectual property and personal data, and the appropriation of these data by obsolete economic institutions, due to temporary technical circumstances, is a glaring fact, signaling the backwardness of the humanitarian development of modern society from the development of its technical .
 				<br>
-				<br>В то же время, и от части в следствии того, мы видим активное развитие децентрализованных технологий, сформировавшееся уже в мощное, глобальное распределённое социально-экономическое движение, объединившее уже достаточно широкие и образованные массы людей.
+				<br>Adding here the fact that 99% of the Internet runs on open (free) software products and is fundamentally on open Linux servers, the absurdity of the capture of the Internet space by obsolete economic institutions becomes obvious.
 				<br>
-				<br>По сути мы наблюдаем процесс формирования нового типа глобальной креативной интеллигенции, способной объединяя свои идеи и интересы с другими общественными силами в единую всецело направленную на общечеловеческое благо и его развитие идеологию, стать основой для окончательного формирования нового, передового трудящегося творческого класса, способного перешагнуть наконец, к давно уже назревшим, глобальным, социально-экономическим изменениям, отвечающим в достаточной мере современным требованиям глобальной Цивилизации.
+				<br>Trade in user data in our time is already a well-established, ordinary and completely legal phenomenon. Companies are developing long user agreements (which are still almost never read) in which they take various kinds of consent from users, such as for the processing of their personal data, which gives them the legal right to appropriate the data of millions of users around the world, analyze it and trade them.
 				<br>
-				<br>Человек всегда стремился к объединению. Этот процесс естественно и гармонично развивается по мере роста, взросления Цивилизации и по сей день мы вовлечены в это объединение. Это началось задолго до нас и тех кого мы помним и уже прошло огромный путь полный трудностей и жертв со стороны общества.
-				<br>Сегодня формируется новое, глобальное общественное сознание - главный орган социального самоуправления Человечества.
+				<br>And the multi-million community of real users remains excluded from managing and controlling their own data, which in the long term leads to the decomposition of the fundamental principles of freedom of personal information, security and control of personal data, freedom of society, and in every possible way slows down and oppresses the process of historical socio-economic development of society.
 				<br>
-				<br>Всё начинается и заканчивается в головах людей и от того что в головах прямым образом зависит судьба человечества и планеты в целом. В наше время сознание общества разрушается и формируется в новом виде одновременно. Необратимые явления времени непрерывно наносят всё новые отпечатки на психологию поведения в глобальных масштабах тем самым во многом определяя вектор развития глобальных социально-экономических отношений.
+				<br>Obviously, from the point of view of ethics, the user is the sole owner of all rights to the content he generates, including meta data and any other types of data that he produces, not to mention the inviolability of personal correspondence, interest shown on the network and other things.
 				<br>
-				<br>Хотя и давно уже в прошлом эпоха «королей» со всеми характерными ей, жёстко централизованными и тормозящими образование и развитие общества, науки и техники, механизмами управления и сегодня мы видим бурный расцвет культуры, образования, науки и техники, в историческом смысле, и проникновение их (в силу уже произошедших исторически последовательных социальных преобразований) практически во все слои общества, процесс децентрализации глобальных механизмов управления всё ещё далёк от своего окончательного этапа.
+				<br>Of course, many technical products that use user data provide convenient, useful and interesting functions for users, but it is obvious that all of them should be enabled and disabled at will, and the mechanism of their action should be transparent, ensure user data security and control, and this should be confirmed by open source product.
 				<br>
-				<br>Децентрализация информационных технологий это процесс который гармонично развивался в глубинах интернет сообщества с давних пор, периодически давая о себе знать появлением мощных децентрализованных технологических механизмов, решающих те или иные задачи общества, как BitTorrent, IRC, Bitcoin, i2P, FileCoin, IPFS и другие. Борьба с подобными децентрализованными технологиями практически бесполезна и в лучшем случае приводит к временному затруднению работы сервисов, что в последствии приводит к модернизации их и стабилизации работы , то есть способствует их развитию. Децентрализованные технологии отличаются надёжностью, стойкостью к всякого рода атакам, безопасностью, анонимностью и совершенно устойчивы к цензуре, что даёт им огромное преимущество перед традиционными централизованными сервисами требующими доверия третьей стороне и поддающиеся контролю и манипуляциям. Таким образом децентрализация решает многие из существующих проблем информационной безопасности и этики уже сегодня а в перспективе способна преобразовать абсолютное большинство IT сервисов в нейтральные, открытые, принадлежащие всем пользователям, децентрализованные системы, что в свою очередь позволит преобразовать сложнейшие глобальные микро и макро экономические процессы самоуправляемые киберсоциально экономические системы непосредственно регулируемые обществом.
+				<br>Also a very important point is the individual flexibility and variability of services. The user must have full control over the part of the overall system that he personally uses, and the possibilities of changes made by the user must be unlimited within his personal part of the system. The individual possibilities of expanding the system must also be unlimited, the system must be expandable in all directions.
 				<br>
-				<br>Безусловно многие технические продукты использующие данные пользователей сегодня предоставляют удобные, полезные и интересные для пользователей функции, но очевидно что они должны быть подключаемы и отключаемы по желанию, а механизм их действия должен быть прозрачен, обеспечивать безопасность данных пользователя и контроль, подтверждением этому должен служить открытый исходный код продукта.
+				<br>The main problem of the Internet is that the means of manipulating data of various kinds, necessary for society for convenient and effective interaction, are mainly centralized and belong to traditional, closed, hierarchical, corporate structures. And this problem is more humanitarian than technical due to the fact that society first needs to deeply comprehend important socio-economic phenomena, of course including a technical one, but from the point of view of philosophy, ethics, history, sociology and economics, in order to form a fairly holistic humanitarian a system that meets modern requirements, capable of becoming the basis for the technical implementation of open, decentralized, information, socio-economic systems belonging to all users.
 				<br>
-				<br>Так же очень важный момент индивидуальная гибкость и изменяемость сервисов. Пользователь должен иметь полный контроль над используемой лично им частью общей системы и возможности вносимых пользователем изменений должны быть неограниченны по крайней мере в пределах его личной части системы.
-				<br>Так же неограниченны должны быть индивидуальные возможности расширения системы, система должна расширяться во всех направлениях.
-				<br>Существует множество подобных основополагающих качеств программного продукта, многие из которых определены в открытой лицензии GPL и других подобных документах.
+				<br>The development of a humanitarian theory describing the mechanism of the global Human organism (society) as an integral socio-economic system will set the movement to identify new directions for the formation and development of new, applied, areas of economic science.
 				<br>
-				<br>Однако требуется большая работа по выявлению и систематизации черт киберсоциальной корпорации, что бы применить свободный принцип к глобальному экономическому процессу.
+				<br>As information technologies develop and penetrate deeper into the global socio-economic environment, their role becomes more and more important, and competition in the development and design of information products is growing.
 				<br>
-				<br>Идеи о свободном софте по мере развития и превращения в технологии широко применяемые в реальном секторе экономики, привели в мир идеи о свободных финансах, которые по мере развития и распространения технологий открывают дорогу новым идеям свободной экономики.
-				<br>Развитие общественных систем управления экономическими процессами.
+				<br>There are attempts on the part of fairly powerful, already fully formed global corporate structures to monopolize the global software development market, but the individual characteristics of the IT field, such as general accessibility, breadth and depth, speed of development and evolution, make this almost impossible, unlike other sectors of the economy.
 				<br>
-				<br>Эволюция глобальных социально-экономических процессов заключается в постепенном преобразовании методов управления от гегемонии политической в сторону гегемонии экономической, от которой в свою очередь движение идёт к гегемонии технологической. Движение это не определено какой либо формой, это может быть несколько форм движения социально экономических процессов.
+				<br>The history of software development as an independently developing applied area, although not so great, however, the development of this area has already passed a certain, not a small path of evolutionary transformation.
 				<br>
-				<br>Отношение этих форм друг к другу определяет существующие направления этих форм . Например это может быть отмирание гегемонии политической в пользу укрепления гегемонии экономической, то есть представлять собой некую наследственную передачу функций управления глобальными социально-экономическими процессами от отдельного гегемона монарха к более децентрализованному диктату парламента, представляющего интересы более широких в социальном смысле экономических сил, или объединение экономических методов управления с технологическими, что естественно рождает и укрепляет гегемонию финансовую. Так же могут существовать и другие формы взаимодействия глобальных социально экономических процессов.
 				<br>
-				<br>Соединения этих различных форм социально экономического взаимодействия могут рождать новые устойчивые формы, что неизбежно стимулирует появление новых видов глобальных социально-экономических систем всё более децентрализованных, самоуправляемых, устойчивых к кризисам и обеспечивающих стабильное всестороннее прогрессивное развитие глобальной экономики, финансов, культуры и социальной среды.
+				<br>Computer science began its development as a closed area of technology, accessible only to corporations and governments. Computers were costly, bulky machines available mainly from large technical institutions  and corporations.
 				<br>
-				<br>Очевидно стремление глобального социально-экономического механизма в своём историческом развитии придти к максимально распределённой одноранговой форме, управляемой по средствам киберсоциальных финансовых механизмов, влияющих на глобальный социально экономический ресурс, то есть механизму находящемуся руках общества и управляемый непосредственно обществом. Глобальная экономика, по мере развития информационных технологий и проникновения их глубоко в финансово-экономическую среду, обретает всё большее количество рычагов существенного воздействия на направление её развития.
+				<br>We can roughly define this stage as the initial stage, followed by the stage of accelerating the development of information technology; it can be defined as the time when the computer becomes available to a larger number of developers. At this time, competition in the field of software development expanded and two main competing currents in the world of software development were identified.
 				<br>
-				<br>Технологически глобальная экономика стоит на пороге фундаментальных преобразований связанных с переходом общества на новый уровень социально-экономического взаимодействия напрямую с использованием инновационных киберсоциальных экономических механизмов.
+				<br>This is followed by a certain stage of formation of these two approaches and balancing their impact on the overall course of the global evolution of software and related socio-economic transformations.
 				<br>
-				<br>С появлением технологии Блокчейн открылась возможность построения децентрализованных финансовых систем, а их развитие реально способствует появлению возможности для построения глобальных самоуправляемых киберсоциальных экономических структур расширяющих возможности интеллектуального влияния общества на глобальный экономический процесс.
+				<br>As a result of overcoming these abstract stages of development, we are seeing an unprecedented surge in activity in the field of OPEN SOURCE development, improving the quality and usability of open source software products and expanding their scope and a significant increase in the number of users.
 				<br>
-				<br>Повторяющиеся кризисные явления современной глобальной экономической системы явно сигнализируют об отсутствии достаточно децентрализованного инструмента для реально разумного управления настолько сложной системой как глобальный социально-экономический механизм. И с каждым более крупным кризисом глобальный общественный организм все более принуждается к созиданию инструмента способного стабилизировать глобальные экономические процессы и управлять ими с целью прогрессивного развития общества и увеличения общественного экономического богатства.
+				<br>OPEN SOURCE is increasingly contributing to the emergence of revolutionary technologies. We can even observe a whole round of evolution of global socio-economic relations directly connected and fed by the global OPEN SOURCE community and its ideas, the general vector of which is the open comprehensive development of software and society as a whole.
 				<br>
-				<br>Что бы ни происходило в мире и какие бы могущественные человеческие силы ни влияли бы на ход истории, организм социума неизменно производит цикл эволюционного преобразования - приспособляемого изменения. Он становится совершенней и процесс этот происходит в первую очередь не на трибунах дебатов, финансовых и экономических съездах и прочих лицемерных мест, а в головах людей, с начала в единичных случаях, затем набирая обороты, крепнет в обществе и развивается по спирали. И конечно всё это развитие сопровождается и утверждается появлением революционных основополагающих; философских, юридических и технических документов и продуктов, представляющих собой разного рода моменты единой диалектики развития глобальных социально-экономических отношений, систематизирующие её до предела требуемого для перехода на новый этап развития.
+				<br>Another of the main, modern problems that are looming over societies is the growth of centralized control over the dissemination of ideas that are relevant to society.
 				<br>
-				<br>Мы живём в эпоху киберсоциализации экономики - перехода общества на новый, сознательный уровень глобального взаимодействия, управления и развития. Этот неологизм достаточно точно определяет возможности реорганизации и преобразования общества, в высокоэффективную, мыслящую социально-экономическую структуру взаимодействия, наделённую коллективным разумом, открывающиеся перед нами сегодня.
+				<br>Outdated economic institutions, due to their hopeless but rather powerful position, tend to quickly improve their own mechanisms for controlling and monitoring society in order to identify relevant, advanced, socially significant ideas and projects and counteract their activity before they spread in society.
+				<br>
+				<br>Together with the fact that the vast majority of large, resource-intensive projects are initiated and financed by the same obsolete socio-economic institutions, we basically have a world that reflects exclusively the interests of these obsolete institutions and is extremely reactionary to any kind of revolutionary, fundamental changes, and therefore to the development of society generally.
+				<br>
+				<br>At the same time, and partly as a result of this, we see the active development of decentralized technologies, which has already formed into a powerful, global distributed socio-economic movement that has already united quite a wide and educated masses of people.
+				<br>
+				<br>In fact, we are witnessing the process of the formation of a new type of global creative intelligentsia, capable of combining their ideas and interests with other social forces into a single ideology fully aimed at the universal good and  development, to become the basis for the final formation of a new, advanced  creative class, able to finally step over to long overdue, global, socio-economic changes that meet sufficiently the modern requirements of global Civilization.
+				<br>
+				<br>Today a new, global public consciousness is being formed - the main organ of social self-government of Mankind.	
+				<br>
+				<br>Although the era of “kings” with all its characteristic, rigidly centralized and hindering the education and development of society, science and technology, control mechanisms has long since passed, and today we see the rapid flourishing of culture, education, science and technology, in the historical sense, and the penetration them (due to the historically consistent social transformations that have already taken place) to almost all sectors of society, the process of decentralization of global mechanisms of economic interaction is still far from its final stage.
+				<br>
+				<br>Decentralization of information technology is a process that has been harmoniously developing in the depths of the Internet community for a long time, periodically making itself felt by the emergence of powerful decentralized technological mechanisms that solve certain problems of society, such as BitTorrent, IRC, Bitcoin, i2P, FileCoin, IPFS and others. The fight against such decentralized technologies is practically useless and, at best, leads to a temporary difficulty in the operation of services, which subsequently leads to their modernization and stabilization of work, that is, contributes to their development.
+				<br>
+				<br>Decentralization solves many of the existing problems of information security and ethics today, and in the future it is able to transform the vast majority of IT services into neutral, open, owned by all users, decentralized systems, which in turn will allow transforming the most complex global  macro economic processes into self-governing cyber-social economic systems directly controlled by society.
+				<br>
+				<br>Of course, many technical products that use user data today provide users with convenient, useful and interesting functions, but it is obvious that they must be user-controlled, and their mechanism of action must be transparent, ensure the safety of user data, and this must be confirmed by the open source of the product. .
+				<br>
+				<br>A very important point is the flexibility and changeability of services. The user must have full control over the part of the overall system that he personally uses, and the possibilities for changes made by the user must be unlimited, at least within his personal part of the system. The possibilities of expanding the system must also be unlimited, the system must expand in all directions. 
+				<br>
+				<br>There are many such fundamental qualities of a software product, many of which are defined in the GPL and other similar documents. However, much work is required to identify and systematize the features of a cybersocial corporation in order to apply the free principle to the global economic process.
+				<br>
+				<br>The ideas about free software, as they develop and become technologies widely used in the real sector of the economy, brought to the world ideas about free finance, which, as technologies develop and spread, open the way for new ideas of a free economy.
+				<br>
+				<br>
+				<br>
+				<br><b class="orange">Development of public systems for managing economic processes.</b>
+				<br>
+				<br>The evolution of global socio-economic processes consists in the gradual transformation of management methods from political hegemony towards economic hegemony, from which, in turn, the movement goes towards technological hegemony. This movement is not determined by any form, it can be several forms of movement of socio-economic processes.
+				<br>
+				<br>The relation of these forms to each other determines the existing directions of these forms. For example, it can be the withering away of political hegemony in favor of strengthening economic hegemony, that is, it can represent a kind of hereditary transfer of the functions of managing global socio-economic processes from a separate hegemon of the monarch to a more decentralized dictate of the parliament, representing the interests of broader economic forces in the social sense.
+				<br>
+				<br>Or the combination of economic methods of management with technological ones, which naturally gives rise to and strengthens financial hegemony. There may also be other forms of interaction of global socio-economic processes.
+				<br>
+				<br>Combinations of these various forms of socio-economic interaction can give rise to new sustainable forms, which inevitably stimulates the emergence of new types of global socio-economic systems that are increasingly decentralized, self-governing, resistant to crises and ensuring stable, progressive development of the global economy, finance, culture and social environment.
+				<br>
+				<br>Obviously, the desire of the global socio-economic mechanism in its historical development to come to the most distributed peer-to-peer form, controlled by means of cyber-social financial mechanisms that affect the global socio-economic resource, that is, a mechanism located in the hands of the public and controlled directly by the public.
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>With the development of information technologies and as they penetrate into the real sector of the financial and economic space, society acquires an increasing number of levers of significant influence on the direction of global economic development.
+				<br>
+				<br>Technologically, the global economy is on the verge of large-scale transformations associated with the transition of society to a new level of socio-economic interaction directly using innovative decentralized cyber-social economic mechanisms.
+				<br>
+				<br>With the advent of Blockchain technology, the possibility of building decentralized financial systems has opened up, and their development really contributes to the emergence of opportunities for building global self-governing cyber-social economic structures that expand the possibilities of intellectual influence of society on the global economic process.
+				<br>
+				<br>The recurring crisis phenomena of the modern global economy clearly signal the absence of a sufficiently decentralized tool for really reasonable management of such a complex system as a global socio-economic mechanism.
+				<br>
+				<br>And with each larger crisis, the social organism of mankind is increasingly forced to create an instrument capable of stabilizing global economic processes and managing them in order to progressively develop society and increase social economic wealth.
+				<br>
+				<br>Whatever happens in the world and no matter how powerful human forces influence the course of history, the organism of society invariably produces a cycle of evolutionary transformation - adaptable change. It becomes more perfect and this process takes place, first of all, not in the stands of debates, financial and economic congresses and other hypocritical places, but in the minds of people, from the beginning in isolated cases, then gaining momentum, becomes stronger in society and developing in a spiral.
+				<br>
+				<br>And of course, all this development is accompanied and approved by the emergence of revolutionary, fundamental, philosophical, legal and technical documents and products, which are various moments of a single dialectic of the development of global socio-economic relations, systematizing and developing it to the limit required for the transition to a new stage of development.
+				<br>
+				<br>We live in the era of cybersocialization of the economy - the transition of society to a new, conscious level of global interaction, management and development. This neologism quite accurately defines the possibilities of reorganization and transformation of society into a global, highly efficient, thinking socio-economic structure endowed with a collective mind, open to us today.
+				<br>
+				<br>
 			</p>
 		</div>
 		
 		<a name="experiment"></a>
 		<div class="text_block_scroll">
-			<h3>Эксперимент</h3>
+			<h3>Experiment</h3>
 			<p>
-				<b class="orange">White Paper of Gyber Experiment</b>
-				<br>GyberExperiment - эксперимент в области криптографии, компьютерной науки, социологии и экономики по созданию Кибер-социальной корпорации - новой формы социально экономического взаимодействия - новой формы экономического юнита.
-				<br>GyberComputer - приватная распределённая вычислительная сеть сообщества, где будет развёрнут необходимый функционал для деятельности участников эксперимента.
-				<br>Gybernet - безопасный блокчейн сообщества, изпользуемый платформой для обеспечения безопасности и прозрачности эксперимента.
-				<br>GyberToken GYBER сообщества, необходимый для взаимодействия с Блокчейн GyberNet и распределённым суперкомпьютером GyberComputer. Для получения GYBER необходимо сжигание основного токена GBR
-				<br>GyberCommunityToken GBR - токен управления платформы, основной инструмент принятия решений в рамках эксперимента. Так же используется сообществом как средство оценки работ над проектами внутри эксперимента. Для учаcтия в управлении кошелёк держателя токенов управления должен быть активен, активность кошельков проверяется специальным алгоритмом при допуске к голосованию и подписи предложения.
-				<br>MacroeconomicDao - прозрачная система взаимодействия и принятия решений основанная на Блокчейн и проверенных смарт контрактах на языке Solidity.
+				<br><b class="orange">GyberExperiment</b> is an experiment in the field of cryptography, computer science, sociology and economics to create a Cyber-social corporation - a new form of socio-economic interaction - a new form of economic unit.
+				<br>GyberComputer is a private distributed computing network of the community, where the necessary functionality for the activities of the participants of the experiment will be deployed.
+				<br>Gybernet is a secure community blockchain used by the platform to ensure the security and transparency of the experiment.
+				<br>GyberToken of the GYBER community, necessary for interaction with the GyberNet Blockchain and the distributed GyberComputer supercomputer. To get GYBER, the burning of the main GBR token is necessary.
+				<br>GyberCommunityToken GBR is a platform management token, the main decision-making tool within the experiment. It is also used by the community as a means of evaluating work on projects within the experiment. To participate in the management, the wallet of the management token holder must be active, the activity of wallets is checked by a special algorithm when allowed to vote and sign the proposal.
+				<br>MacroeconomicDao is a transparent system of interaction and decision-making based on Blockchain and proven smart contracts in the Solidity language.
 				<br>
-				<br><b>Цели Эксперимента</b>
-				<br>Создать механизм прямого социально-экономического взаимодействия, принадлежащий всем участникам позволяющий концентрировать общественные и финансовые ресурсы для реализации даже самых масштабных, глобальных проектов и управления ими. По сути это реализация новой формы экономической единицы не обходимая для создания новой формы глобального социально-экономического пространства.
-				<br>Использование экономического потенциала реализованных проектов для более эффективной реализации следующих проектов.
-				<br>Основные проекты сообщества
+				<br><b>Objectives of the Experiment</b>
+				<br>To create a mechanism of direct socio-economic interaction belonging to all participants, allowing to concentrate public and financial resources for the implementation and management of even the most ambitious, global projects. In fact, this is the implementation of a new form of economic unit, necessary to create a new form of global socio-economic space.
+				<br>Using the economic potential of the implemented projects for more effective implementation of the following projects.
+				<br>Main community projects
 				<br>
 				<br><b>Gyber Social Platform</b>
-				<br>Для обеспечения коммуникационных потребностей эксперимента на этапе старта в первую очередь будет реализован основной функционал Gyber Social Platform - социальной сети принадлежащей всем пользователям, и управляемой ими по средствам DAO и расширяемой пользователя по средствам GitHub репозитория.
-				<br>С точки зрения пользователя стартовая модель платформа обладает основными функциями социальной сети такими как текстовые и голосовые чаты, хостинг и обмен видео и прочих видов файлов.
-				<br>Все функции представленные на платформе реализованы в соответствии с этикой и философией сообщества Gybernaty, что гарантирует пользователям безопасность и контроль данных оставляя возможность полного шифрования аккаунта на стороне клиента или шифрование на сервере с использованием публичного ключа клиента.
-				<br>Кроме основных функций платформа предоставляет возможность пользователю создавать проекты для реализации в рамках эксперимента, становясь его реализатором.
-				<br>Пользователь может предложить готовый проект или просто идею и вместе с сообществом развить её до реального проекта.
+				<br>To meet the communication needs of the experiment at the start stage, first of all, the main functionality of the Gyber Social Platform will be implemented - a social network owned by all users, managed by them through the DAO and expandable using the GitHub repository.
+				<br>From the user's point of view, the starting model of the platform has the basic functions of a social network, such as text and voice chats, hosting and sharing videos and other types of files.
+				<br>All the functions presented on the platform are implemented in accordance with the ethics and philosophy of the Gybernaty community, which guarantees users the security and control of data, leaving the possibility of full encryption of the account on the client side or encryption on the server using the client's public key.
+				<br>In addition to the main functions, the platform provides an opportunity for the user to create projects for implementation as part of an experiment, becoming its implementer.
+				<br>The user can offer a ready-made project or just an idea and, together with the community, develop it into a real project.
 				<br>
-				<br><b>О данных</b>
-				<br>При проектировании и реализации социальной платформы в первую очередь упор делался на безопасность данных и конфиденциальность их хранения. На платформе на этапе стартовой архитектуры предусмотрено несколько уровней защиты данных на выбор.
-				<br>Данные обрабатываются специальным алгоритмом позволяющим используя шифрование на разных уровнях обеспечить практически абсолютный уровень безопасности для клиента.
-				<br>Все объёмные данные платформа хранит в сети IPFS в которой в рамках эксперимента развёрнуты ноды для дополнительного пининга контента.
+				<br><b>About the data</b>
+				<br>When designing and implementing the social platform, first of all, emphasis was placed on data security and confidentiality of their storage. There are several levels of data protection to choose from on the platform at the start-up architecture stage.
+				<br>The data is processed by a special algorithm that allows you to use encryption at different levels and provide an almost absolute level of security for the client.
+				<br>The platform stores all the bulk data in the IPFS network, in which nodes for additional content creation are deployed as part of the experiment.
 				<br>
-				<br><b>Архитектура</b>
-				<br>Платформа проектируется как открытая масштабируемая структура с разными точками ввода и вывода данных с множеством ядер, каждый пользователь сможет написать свой собственный модуль кода (который может быть включен в ноду и предложен желающим) или сделать дизайн новой фичи что бы она была реализована в реальном продакшене.
 				<br>
-				<br>Управление структурой кода осуществляется по средствам гит хаб репозиториев под управление сообщества. Каждый может создать свой модуль и распространить её среди всех желающих.
+				<br><b>Architecture</b>
+				<br>The platform is designed as an open scalable structure with different data input and output points with multiple cores. Each user will be able to write their own code module (which can be included in the node and offered to those who wish) or design a new feature so that it can be implemented in real production.
+				<br>The code structure is managed through git hub repositories managed by the community. Everyone can create their own module and distribute it to everyone.
 				<br>
-				<br><b>Распределённость</b>
-				<br>Создаваемая нами модульная архитектура представляет собой сеть нод с набором микросервисных контейнеров. Каждая нода может быть дополнена любыми существующими модулями, либо могут быть написаны любые требуемые модули и встроены в сборку конкретной ноды.
-				<br>Платформа практически не хранит данные на своих серверах. Все массивные данные пользователей выгружаются в сеть IPFS в открытом или зашифрованном виде, причём у пользователя есть несколько уровней защиты при шифровании своих файлов. Для поддержания доступа к непопулярным файлам в сети IPFS платформа предоставляет пиниговый сервис, который представляет собой сеть IPFS нод запущенных в контейнерах на основных нодах сети Gybernet .
-				<br>Так же сеть располагает виртуальной машины объединяющей мощность всех работающих на текущий момент нод.
+				<br><b>Distribution</b>
+				<br>The modular architecture we are creating is a network of nodes with a set of microservice containers. Each node can be supplemented with any existing modules, or any required modules can be written and embedded in the assembly of a specific node.
+				<br>The platform practically does not store data on its servers. All massive user data is uploaded to the IPFS network in open or encrypted form, and the user has several levels of protection when encrypting their files. To maintain access to unpopular files on the IPFS network, the platform provides a pinning service, which is a network of IPFS nodes running in containers on the main nodes of the Gybernet network.
+				<br>The network also has a virtual machine that combines the power of all currently operating nodes.
 				<br>
-				<br><b>Шифрование</b>
-				<br>Платформа предусматривает три уровня защиты данных пользователей, но даже самый слабый уровень защиты обеспечит данные пользователя оптимальной защитой.
-				<br>Данные пользователя могут в полном объёме шифроваться на стороне клиента обеспечивая 100% контроль над данными для пользователя.
-				<br>Шифруются только некоторые данные на стороне клиента и передавать серверу остальные данные для шифрования указанным пользователем ключом.
-				<br>Автоматический режим по умолчанию сконфигурирует алгоритм защиты данных.
+				<br><b>Encryption</b>
+				<br>The platform provides three levels of user data protection, but even the weakest level of protection provides optimal protection.
+				<br>User data can be fully encrypted on the client side, providing 100% control over the data for the user.
+				<br>Only some data is encrypted on the client side, and the rest is transmitted to the server for encryption with the key specified by the user.
+				<br>Automatic mode configures the data protection algorithm by default.
+				<br>The platform is built in such a way that users can control their data and have confidential access to it.
+				<br>Also, the main principle of the platform is community extensibility, since this is an open source platform. Everyone can supplement it, and the community can support one or another module of the supplement and distribute it over the Gybernet network.
 				<br>
-				<br>Платформа строится таким образом, что бы пользователи могли контролировать свои данные и иметь к ним конфиденциальный доступ.
-				<br>Так же основным принципом платформы является расширяемость сообществом, так как этот open source платформа каждый может дополнить её, а сообщество может поддержать тот или иной модуль дополнения и распространить его по сети Gybernet.
+				<br><b>Stack</b>
+				<br>At the stack level, the network is a multilingual cross-platform containerized cluster managed by a community of experiment participants.
+				<br>Each node consists of isolated cores communicating with each other, distributing the work received from the users of the Gyber Social Platform. Each of the cores is responsible for its own layer of processes. Initially, the development of the core core module is conducted in the Rust language. Each core has its own auxiliary infrastructure, which is also run in isolation on separate containers. As part of the experiment, parallel development of modules and cores is used to determine the best stack for solving certain tasks and ensuring maximum flexibility in the development of the platform architecture in the long term. Modules for the platform can be written by anyone and in any way, but to be included in the node and connected to the network, it must be checked by a special test algorithm that will check its compatibility with the network and whether it has the necessary functionality to ensure the operation of the node. There is also an aspect of trust in a particular node, based on the activity and connections of its owner within the experiment. The community should trust every node. We call it Proof of Community. The management of the production versions of the platform and the current state of the program code takes place through the github repository and is controlled by the developer community.
 				<br>
-				<br><b>Стек</b>
-				<br>На уровне стэка сеть представляет собой мультиязычный кроссплатформенный контейнеризированный кластер под управлением сообщества участников эксперимента.
-				<br>Каждая нода состоит из изолированных ядер общающихся между собой распределяя работу, получаемую от пользователей Gyber Social Platform. Каждое из ядер отвечает за свой слой процессов.Первоначально разработка модуля основного ядра ведётся на языке Rust. Каждое ядро располагает собственной вспомогательной инфраструктурой, так же запускаемой изолировано на отдельных контейнерах.В рамках эксперимента применяется параллельная разработка модулей и ядер для определения наилучшего стека для решения тех или иных задач и обеспечения максимальной гибкости развития архитектуры платформы в долгосрочной перспективе.Модули для платформы может писать кто угодно и как угодно, но для включения в состав ноды и подключения к сети он должен пройти проверку специальным тестовым алгоритмом который проверит его совместимость с сетью и наличие у него необходимого функционала для обеспечения работы ноды. Так же существует аспект доверия конкретной ноду исходя из активности и связям её владельца в рамках эксперимента.Сообщество должно доверять каждой ноде мы называем это Proof of Community. Управление продакшн версиям платформы и актуальным состояние программного кода происходит через гитхаб репозиторий и контролируется сообществом разработчиков.
 				<br>
 				<br>
+				<br><b>AiC (large-scale study of the field of artificial experiment)</b>
+				<br>A large-scale study of artificial intelligence, organized by the Gybernaty community, which aims to create an open community for the development and use of artificial intelligence (AI) models in the blockchain environment. Our project uses the capabilities of DAO contracts to regulate the operation of these models, ensuring transparency and openness in their development and use.
 				<br>
-				<br><b class="orange">AiC (масштабное исследование области искусственного эксперимента)</b>
-				<br>Масштабное исследование области искуственного интеллекта, организованное сообществом Gybernaty, целью которого является создание открытого сообщества для разработки и использования моделей искусственного интеллекта (ИИ) в блокчейн-среде. Наш проект использует возможности контрактов DAO для регулирования работы этих моделей, обеспечивая прозрачность и открытость в их разработке и использовании.
+				<br>The problem we are solving is the high cost and complexity associated with the development and use of artificial intelligence models, as well as problems related to privacy and security when using these models in various fields. AiC offers a solution by creating an open community, whose members can jointly create and use artificial intelligence models in a blockchain environment. The use of DAO contracts ensures transparency, openness and regulation of artificial intelligence models.
 				<br>
-				<br>Проблема, которую мы решаем, заключается в дороговизне и сложности, связанных с разработкой и использованием моделей искусственного интеллекта, а также в проблемах, связанных с конфиденциальностью и безопасностью при использовании этих моделей в различных областях. AiC предлагает решение путем создания открытого сообщества, участники которого могут совместно создавать и использовать модели искусственного интеллекта в блокчейн-среде. Использование контрактов DAO обеспечивает прозрачность, открытость и регулирование работы моделей искусственного интеллекта.
+				<br>The advantages of AiC are the ability of participants to share knowledge and experience by creating and using artificial intelligence models in a blockchain environment with minimal costs. In addition, the use of DAO contracts increases security and transparency throughout the entire process.
+				<br>AiC can be used for both commercial and non-commercial purposes, allowing you to create artificial intelligence models in various fields, such as medicine, finance, transport and much more.
 				<br>
-				<br>Преимущества AiC заключаются в возможности участников обмениваться знаниями и опытом, создавая и используя модели искусственного интеллекта в блокчейн-среде с минимальными затратами. Кроме того, использование контрактов DAO повышает безопасность и прозрачность на протяжении всего процесса.
-				<br>AiC может использоваться как в коммерческих, так и в некоммерческих целях, позволяя создавать модели искусственного интеллекта в различных областях, таких как медицина, финансы, транспорт и многое другое.
+				<br>To develop high-quality artificial intelligence models, we use a number of programming languages, including Python, C++, Java and others. We use popular libraries and frameworks such as TensorFlow, PyTorch, Keras, Scikit-learn and OpenCV. These tools allow us to create and train artificial intelligence models, perform tasks such as deep learning, machine learning, computer vision and much more.
 				<br>
-				<br>Для разработки высококачественных моделей искусственного интеллекта мы используем целый ряд языков программирования, включая Python, C++, Java и другие. Мы используем популярные библиотеки и фреймворки, такие как TensorFlow, PyTorch, Keras, Scikit-learn и OpenCV. Эти инструменты позволяют нам создавать и обучать модели искусственного интеллекта, выполнять такие задачи, как глубокое обучение, машинное обучение, компьютерное зрение и многое другое.
+				<br>Blockchain technology plays a vital role in our project, as we strive to create decentralized artificial intelligence models that can run on the blockchain and be used in various applications. We use blockchain platforms such as Ethereum, Polkadot, Solana and others to develop decentralized applications and smart contracts that regulate the operation of our artificial intelligence models.
 				<br>
-				<br>Технология блокчейн играет жизненно важную роль в нашем проекте, поскольку мы стремимся создать децентрализованные модели искусственного интеллекта, которые могут работать на блокчейне и использоваться в различных приложениях. Мы используем блокчейн-платформы, такие как Ethereum, Polkadot, Solana и другие, для разработки децентрализованных приложений и смарт-контрактов, которые регулируют работу наших моделей искусственного интеллекта.
+				<br>Using DAO contracts, we give network participants the opportunity to make decisions regarding the development and use of an artificial intelligence model, as well as the fair distribution of rewards among participants. In addition, we are studying the application of machine learning technology to improve the functioning of blockchain networks and increase the efficiency of decentralized applications.
 				<br>
-				<br>Используя контракты DAO, мы даем участникам сети возможность принимать решения относительно разработки и использования модели искусственного интеллекта, а также справедливого распределения вознаграждений между участниками. Кроме того, мы изучаем применение технологии машинного обучения для улучшения функционирования блокчейн-сетей и повышения эффективности децентрализованных приложений.
 				<br>
-				<br>Чтобы способствовать сотрудничеству и вовлечению сообщества, мы придерживаемся открытого подхода и используем лицензии AGPL, позволяя более широкому сообществу вносить свой вклад в разработку и совершенствование наших моделей искусственного интеллекта. Мы верим, что коллективные усилия членов сообщества приведут нас к большим достижениям в области искусственного интеллекта и блокчейн-технологий.
+				<br><b>Internal functioning</b>
+				<br>To move the project into the accumulation phase, it is necessary to burn GBR tokens by 0.1% of the required amount for the implementation of the project.
+				<br>The transition process consists in issuing a limited number of internal tokens of a specific project, for sale at a price of 1 BUSD.
+				<br>The maximum amount for the implementation of the project is also limited by the reputation of the implementer or the general reputation of the implementers of one project.
+				<br>Participants gain a reputation as a result of live activity in the experiment: posting and discussing projects, participating in financing and implementing projects.
+				<br>Reputation can also be obtained as a result of the Gyber token staking.
 				<br>
-				<br><b>Управление и защита</b>
-				<br>Одна из основных целей эксперимента создать платформу управляемую сообществом и для этого организаторы эксперимента составили безопасные смарт контракты на языке Solidity и на основе проверенной библиотеки OppenZeppelin для реализации токенов управления и утилити токенов эксперимента, так же был разработан контракт TheMaceroeconomicDAO для обеспечения надёжного и прозрачного механизма принятия решений в ходе эксперимента.
+				<br>There are no restrictions on assets received from the sale of wrapped tokens of the project.
+				<br>Project implementers can freely dispose of assets by following the documentation and roadmap of the project.
+				<br>Assets received from the sale of wrapped tokens are unblocked in parts or completely by a simple signature of a single or several implementers of one project, which are determined at the time of the project proposal and the release of internal tokens of a particular project.
 				<br>
-				<br>При проектировании контрактов мы использовали актуальные модели и современные решения, что бы сделать нашу безопасную базовую структуру контрактов максимально расширяемой и интегрируемой.
-				<br>После деплоя исходный код контракта может быть изменён только сообществом разработчиков через механизм голосования DAO контракта.
-				<br>Исходный код платформы по средствам гитхаб репозитория и все важные решения в рамках эксперимента принимаются по средствам предложения и проведения голосования по средствам DAO контракта.
-				<br>Виртуальная машина сети GyberComputer так же подчиняется командам из блокчейн.
-				<br>Основываясь на блокчейн мы намерены обеспечить максимальный уровень прозрачности и безопасности работы платформы и обеспечить эксперименту максимально открытое и надёжное пространство для деятельности.
+				<br><b>Steaking</b>
+				<br>Staking is a universal tool within the framework of the project. With its help, you can improve the reputation of participants and receive passive income.
+				<br>As part of the experiment, two staking options are provided:
+				<br>GyberToken = 0.00000000007% of the total income of all projects in Gyber tokens.
+				<br>Internal project tokens = 10 / [total number of tokens issued by the project] % from the income of a specific project.
+				<br>The minimum term of staking is 1 year
 				<br>
 				<br>
 				<br>
-				<br><b class="orange">Токеномика</b>
-				<br>платформа предполагает реализацию множества внутренних токенов, однако существует основной токен сообщества GBR и утилити токен платформы GYBER.
-				<br>GyberToken GYBER - утилити токен платформы требуемый для взаимодействия с платформой, который может быть получен при сжигании токен GBR
-				<br>GyberCommunityToken GBR - основной токен управления, требуемый для производства внутренних токенов эксперимента и управления экспериментом, принятия коллективных решений, изменения и расширения платформы.
-				<br>В ходе эксперимента большая часть всех существующих GBR токенов будет распределена между четырьмя категориями держателей: сообществом разработчиков, участниками эксперимента, крупными инвесторами и фондами, участниками открытого рынка.
-				<br>Так же в рамках проекта будет создан резервный фонд для оптимизации процессов развёртывания эксперимента.
-				<br>Разработчики - 30 % GBR
-				<br>Участники эксперимента - 30 % GBR
-				<br>Инвесторы и фонды - 10 % GBR
-				<br>Публичный рынок - 15%
+				<br><b>Organization</b>
+				<br>The community is built on the basis of the personal and public interests of the participants.
+				<br>Participants are verified by means of an electronic signature.
+				<br>The maximum amount for the implementation of the project is also limited by the reputation of the implementer or the general reputation of the implementers of one project.
+				<br>All important decisions in projects are made on the basis of the vote of the implementers by means of electronic signatures.
+				<br>Each implementer is an active economic unit, which can represent entire companies in the real sector of the economy or even a set of organizations.
 				<br>
+				<br><b>Responsibility</b>
+				<br>Each implementer is responsible to the entire community primarily by his reputation and can be excluded from the experiment for unfair treatment.
 				<br>
+				<br>Also, the implementer bears internal personal responsibility to other implementers of a particular project.
+				<br>The roles and tasks of the implementers within the projects are determined by the implementers themselves, but the common task of all implementers is the organization of the project and ensuring its functioning
 				<br>
-				<br><b class="orange">Основная механика эксперимента</b>
-				<br>всё начинается с идеи...
-				<br>Каждый участник эксперимента может предложить идею или проект.
-				<br>После предложения идея или проект сразу попадает в фазу обсуждений, где идея становится проектом, а проект конкретизируется, дополняется и набирает реализаторов.
+				<br>Assets received from the sale of wrapped tokens are unblocked in parts or completely by a simple signature of a single or several implementers of one project, which are determined at the time of the project proposal and the release of internal tokens of a particular project.
 				<br>
-				<br><b class="orange">Реализаторы</b>
-				<br>Каждый предложивший проект считается основным реализатором и может подписать в проект сколько угодно реализаторов.
-				<br>При недостаточной репутации основного реализатора для реализации масштабного проекта может потребоваться подписка дополнительных реализаторов .
-				<br>Так же дополнительные реализаторы могут быть полезны проекту в качестве социального, финансового или экономического ресурса для реализации проекта.
+				<br><b>The order of interaction of participants</b>
+				<br>A discussion group is created for each project, where everyone can get in. Further, private groups with a specific description can be created within the general group to discuss the project, in which participants are allowed by the implementers.
 				<br>
-				<br><b>Фазы проекта</b>
-				<br>Проекты в эксперименте имеет четыре фазы:
+				<br><b>Private groups</b>
+				<br>The main form of organizing any work on a project within the framework of an experiment. They are used for discussion and concrete work on the implementation of the project in the circle necessary for a specific task.
+				<br>The circle of participants in a particular private group is strictly limited to the participants required to solve a specific task.
+				<br>Private groups can also be created inside already existing private groups, which provides a more subtle interaction within a specific topic.
 				<br>
-				<br><b>Фаза обсуждения</b>
-				<br>Эта фаза на которой любой желающий может участвовать в обсуждении проекта. В период обсуждения происходит конкретизация, качественная формулировка проекта, проведение аналитических работ, подготовка необходимых документов и возможно расширение круга реализаторов, для перехода в следующую фазу
 				<br>
-				<br><b>Фаза аккумуляции</b>
-				<br>На этом этапе любой желающий может инвестировать в конкретный проект и стать его супер-клиентом. А реализаторы могут собрать средства для реализации конкретного проекта. Начало фазы аккумуляции подразумевает наличие у проекта подробной доФаза аккумуляциикументации включающей в себя все необходимые экономические и бизнес расчёты; наличие дорожной карты проекта и полной технической документации.
 				<br>
-				<br><b>Фаза реализации</b>
-				<br>На этом этапе реализаторы используют аккумулированные средства для реализации конкретного проекта в соответствии с подготовленной документацией и дорожной картой.
+				<br><b>The Macroeconomic Dao
+				<br>Ecosystem</b>
+				<br>Each Dao in the ecosystem involves the implementation of a specific project, enterprise, event, decision-making or any other public action proposed by the community of experiment participants and developers.
 				<br>
-				<br><b>Фаза функционирования</b>
-				<br>Это этап на которой проект реализован и функционирует предлагая свои продукты трём категориям клиентов.
+				<br>Social DAOs are used for making decisions within the community and organizing any social events within the community. They do not concern either business ideas or external public projects. It can be just a vote for some proposal, or a collection of resources (public and material) for some internal event or a charity gathering.
 				<br>
-				<br><b>Статусы клиентов</b>
-				<br>в эксперименте существует три статуса клиентов:
+				<br>The current state of the code of the entire platform is supported by the state of the main branch of the repository on GitHub, in order to make changes to which it is required to pass a Code DAO vote. In this way, decentralized management of the global code structure is carried out.All members of the developer community can be Code Dao initiators.
 				<br>
-				<br><b>Внешние клиенты:</b>
-				<br>Клиенты не участвующие в эксперименте, могут покупать продукцию всех доступных реализованных проектов с помощью фиатных средств.
+				<br>Commerce DAO is a simple implementation of the concept of crowdinvesting, where entrepreneurs and enthusiasts can offer a business idea or a real business plan for implementation at the expense of investors, in turn, investors get the opportunity to consume the products of the implemented project on exclusive terms and the opportunity to receive a share of the profits of the implemented project.
 				<br>
-				<br><b>Особые клиенты:</b>
-				<br>Все держатели Gyber токена являются для всех проектов особыми клиентами. Статус особого клиента подразумевает особую скидку на продукцию любого проекта в размере не менее 30% при оплате в GBR токенах.
+				<br>Economic DAO is a completely new concept of organizing public financing, project management and socio-economic interaction, which allows accumulating social, financial and economic resources for the most effective implementation of any relevant public projects and ideas.
 				<br>
-				<br><b>Супер клиенты</b>
-				<br>Все держатели внутренних токенов конкретных проектов являются супер-партнёрами конкретных проектов. Статус супер-партнёра подразумевает супер-скидку на продукцию конкретного проекта в размере не менее 60% при оплате внутренними токенами проекта.
 				<br>
 				<br>
-				<br><b class="orange">Внутреннее функционирование</b>
-				<br>Для перехода проекта в фазу аккумуляции необходимо сжечь GBR токенов на 0.1% от требуемой суммы для реализации проекта.
-				<br>Процесс перехода заключается в выпуске ограниченного количества внутренних токенов конкретного проекта, для продажи по цене 1 BUSD.
-				<br>Максимальная сумма для реализации проекта так же ограничена репутацией реализатора или общей репутацией реализаторов одного проекта.
-				<br>Участники получают репутацию в результате живой активности в эксперименте: размещения и обсуждения проектов, участия в финансировании и реализации проектов.
-				<br>Так же репутация может быть получена в результате стейкинга Gyber токена.
+				<br><b>Practical logic of organization and self-management of users</b>
+				<br>At the first level, the system is a peer-to-peer structure consisting of all users of the community who have equal privileges and own equal parts of a common active resource representing the aggregate, creative and economic potential of the community.
+				<br>The main application function of the community is effective interaction with the aim of realizing the interests, ideas and projects of all users, increasing the overall active resource of the community, developing the community and users.
 				<br>
-				<br>Нет никаких ограничений на активы полученные от продажи обернутых токенов проекта.
-				<br>Реализаторы проекта могут свободно распоряжаться активами следуя документации и дорожной карты проекта.
-				<br>Активы полученные от продажи обёрнутых токенов разблокируются частями или полностью простой подписью единственного или нескольких реализаторов одного проекта, которые определяются в момент предложения проекта и выпуске внутренних токенов конкретного проекта.
+				<br>Using the functionality of the extensible creative platform Gyber Social, users can safely communicate, share relevant information, propose ideas and projects for implementation and work collectively on all stages of project implementation and management. The platform includes all the necessary functionality for news exchange, communication and teamwork on projects, and its architecture is built in such a way that it ensures the security of user data and the ability to control them directly from users and is comprehensively and easily expanded by users directly or through collective interaction.
 				<br>
-				<br>Стейкинг
-				<br>стейкинг это универсальный инструмент в рамках проекта. С его помощью можно повышать репутацию участников и получать пассивный доход.
+				<br>The main method of user interaction is shared spaces: news, messages, ideas and projects, which are shared thematic folders in which each user can create folders with content, thereby sharing news, messages, ideas and projects with the community.
 				<br>
-				<br>в рамках эксперимента предусмотрено два варианта стейкинга:
+				<br>News, messages, discussions of ideas and projects added by users to shared spaces represent the main content, which, in turn, can form its own internal directory tree, access rights to which are determined by the administrators of the main content.
+				<br>Internal catalogs of the main content are directly related to the subject of the main content and constitute its internal interactive user interaction environment.
 				<br>
-				<br>GyberToken = 0.00000000007% от общего дохода всех проектов в Gyber токенах.
+				<br>When the main content is added to any of the fields, a child directory is created in the root of a specific common field, and the author becomes its director (main implementer) and can assign administrators (additional implementers), groups, access rights to it and change them. Also, each child directory in a specific field must have some mandatory attributes and some additional ones. These attributes are determined based on the thematic features of each of the common fields.
 				<br>
-				<br>Внутренние токены проектов = 10 / [общее количество выпущенных проектом токенов] % от дохода конкретного проекта.
 				<br>
-				<br>Минимальный срок стейкинга 1 год
-				<br> 
 				<br>
+				<br><b>The concept of socio-economic selection</b>
+				<br>Basic concepts:				<br>
+				<br>A new kind of financial community is a peer–to-peer community of people organized for effective interaction in order to implement ideas and projects of interest to them, at the expense of the collective capital of participants, promotion and management of them, by means of advanced information technologies and financial mechanisms.
 				<br>
-				<br><b class="orange">Организация</b>
-				<br>Сообщество строится на основе личных и общественных интересов участников.
-				<br>Участники верифицируются по средствам электронной подписи.
-				<br>Максимальная сумма для реализации проекта так же ограничена репутацией реализатора или общей репутацией реализаторов одного проекта.
-				<br>Все важные решения в проектах принимаются на основе голосования реализаторов по средствам электронных подписей.
-				<br>Каждый реализатор это активный экономический юнит, который может представлять собой целые компании в реальном секторе экономики или даже совокупность организаций.
+				<br>The social and investment circle is an unlimited number of members of a new type of financial community interested in the implementation of a specific idea and project.
 				<br>
-				<br><b>Ответственность</b>
-				<br>Каждый реализатор несёт ответственность перед всем сообществом прежде всего своей репутацией, и может быть исключён из эксперимента за недобросовестное отношение.
+				<br>The active group (the core of the provision) is the optimal number of participants from among the social and investment circle who want to actively participate in the implementation of a specific idea and project.
 				<br>
-				<br>Так же реализатор несёт внутреннюю личную ответственность перед другими реализаторами конкретного проекта.
-				<br>Роли и задачи реализаторов внутри проектов определяют сами реализаторы, но общая задача всех реализаторов это организация проекта и обеспечение его функционирования.
+				<br>A professional coordination group is an auxiliary administrative resource of a new type of financial community, hired for a fee from professionals, which may consist of both community members and non–community members. The main task is professional assistance, ensuring the project activities of active groups.
 				<br>
-				<br>Активы полученные от продажи обёрнутых токенов разблокируют частями или полностью простой подписью единственного или нескольких реализаторов одного проекта, которые определяются в момент предложения проекта и выпуске внутренних токенов конкретного проекта.
+				<br>Social relevance is a project parameter directly determined by the sufficiency of the number of participants in the social and investment circle for the implementation of the project at the expense of the collective capital of participants on the principle of minimum individual participation.
 				<br>
+				<br>The threshold of social relevance is the ratio of the cost of implementing a project and the number of participants in the social and investment circle sufficient for its implementation at the expense of the collective capital of participants on the principle of minimum individual participation in financing.
+				<br>The collective capital (of the participants) is the total investment ability of the participants interested in the implementation of a particular project.
 				<br>
-				<br><b>Порядок взаимодействия участников</b>
-				<br>По каждому проекту создаётся группа обсуждения куда могут попасть все желающие далее внутри общей группы для обсуждения проекта могут быть созданы приватные группы с конкретным описанием в которые участников допускают реализаторы проекта.
+				<br>The principle of minimum individual participation (in financing)
+				<br>is a principle in which the full cost of the project is distributed equally to all participants in financing, and the amount of individual participation in financing is determined by the minimum possible size, that is, it decreases as the number of participants increases until the threshold of the relevance of the project is passed.
 				<br>
-				<br><b>Приватные группы</b>
-				<br>Основная форма организации любой работы над проектом в рамках эксперимента. Они используются для обсуждения и конкретной работы над реализацией проекта в кругу необходимом для конкретной задачи связанной с проектом.
-				<br>Круг участников конкретной приватной группы строго ограничен участниками требуемыми для решения конкретной задачи.
-				<br>Приватные группы так же могут создаваться внутри уже существующих приватных групп, что обеспечивает более тонкое взаимодействие внутри конкретной темы.
 				<br>
+				<br>Interaction Properties of User spaces. The main functional workspace of the expandable creative platform is the project space. It forms projects from the ideas of the community, offers interesting projects for implementation, discusses projects, and direct intellectual work on the implementation and management of projects.  The main concept of the project field is the idea-project-implementation model, a pipeline that accepts relevant ideas for collective implementation at the entrance, forms concrete, ready-to-implement projects based on them and implements them at the expense of an actual community resource, which is formed by the ratio of the total active community resource and the number of users interested in implementing a specific project.  After the initial formation of the project, it is discussed and as interest in the project grows from the community, the Director determines the active project group, which will be engaged mainly in the intellectual management of the project.  Project financing is based on the principle of minimal individual participation, which is described in detail in the community concept sheet. The main content in the general project space is a social and investment circle consisting of users interested in the implementation of a specific project.  The circle may consist of users with different attitudes to the project, for example, an active group, a passive group, which in turn, if necessary, may have their own internal gradations.  The final structure of the circle is individual and comes from the internal qualities of the project and the external conditions of implementation. The main distinguishing quality of the social and investment circle, after the final formation of a specific project, is the unconditional unity of its participants. The circle includes and consists exclusively of those users who are interested in implementing a specific project.  If internal contradictions arise among the participants of the social and investment circle, a separate discussion is held in a special directory within the circle, where the main contradictions are identified in order to form a unified solution for the implementation of the project that meets the interests of the overwhelming majority of participants. If this is not possible, the project can always be divided into several independent ones and identify the most relevant one for implementation on the principle of minimum individual participation in financing.
 				<br>
 				<br>
-				<br><b class="orange">The Macroeconomic Dao</b>
-				<br>Ecosystem
-				<br>Каждое Dao в экосистеме предполагает реализацию конкретного проекта, предприятия, мероприятия, принятие решения или какого либо ещё общественного действия предложенного сообществом участников эксперимента и разработчиками.
-				<br>
-				<br>Social DAO используются для принятия решений внутри сообщества и организации каких либо общественных мероприятий внутри сообщества. Они не касаются ни бизнес идей ни внешних общественных проектов. Это может быть просто голосование за какое-то предложение либо сбор ресурс (общественных и материальных) для проведения какого либо внутреннего мероприятия или благотворительный сбор.
-				<br>
-				<br>Актуальное состояние кода всей платформы поддерживается состоянием основной ветки репозитория на GitHub, для внесения изменений в который требуется пройти голосование Code DAO. Таким образом осуществляется децентрализованное управление глобальной структурой кода.Все участники сообщества разработчиков могут быть ициаторами Code Dao.
-				<br>
-				<br>Commerce DAO представляет собой простую реализацию концепции крауд инвестинга, где предприниматели и энтузиасты могут предложить идею для бизнеса или реальный бизнес-план для реализации за счёт средств инвесторов, в свою очередь инвесторы получают возможность потребления продуктов реализованного проекта на эксклюзивных условиях и возможность получения доли от прибыли реализованного проекта.
-				<br>
-				<br>Economic DAO - это совершенно новая концепция организации общественного финансирования, управления проектами и социально экономического взаимодействия, позволяющая аккумулировать социальный, финансовый и экономический ресурс для максимально эффективной реализации любых актуальных общественных проектов и идей.
-				<br>
-				<br>
-				<br><b class="orange">Практическая логика организациии самоуправления пользователей</b>
-				<br>На первом уровне система представляет собой одноранговую структуру состоящую из всех пользователей сообщества, обладающих равными привилегиями и владеющих равными частями общего активного ресурса, представляющего собой совокупный, креативный и экономический потенциал сообщества.
-				<br>Главной прикладной функцией сообщества является эффективное взаимодействие с целью реализации интересов, идей и проектов всех пользователей, увеличение общего активного ресурса сообщества, развитие сообщества и пользователей.
-				<br>
-				<br>Используя функционал расширяемой креативной платформы Gyber Social пользователи могут безопасно общаться, делиться актуальной информацией, предлагать идеи и проекты для реализации и коллективно работать над всеми этапами реализации и управления проектами. Платформа включает в себя весь необходимый функционал для обмена новостями, общения и коллективной работы над проектами, а архитектура её строится таким образом, что бы она обеспечивала безопасность данных пользователей и возможность контроля за ними непосредственно со стороны пользователей и была, всесторонне и легко расширяема пользователями непосредственно или посредством коллективного взаимодействия.
-				<br>
-				<br>Основным методом взаимодействия пользователей являются общие пространства: новостей, сообщений, идей и проектов, которые представляют собой общие тематические папки в которых каждый пользователь может создавать папки с контентом, тем самым делиться с сообществом новостями, сообщениями, идеями и проектами.
-				<br>
-				<br>Новости, сообщения, обсуждения идей и проектов, добавляемые пользователями в общие пространства, представляют собой основной контент который в свою очередь может формировать собственное внутреннее дерево каталогов, права доступа к которому определяются администраторами основного контента.
-				<br>Внутренние каталоги основного контента имеют непосредственное отношение к предмету основного контента и составляют его внутреннюю интерактивную среду взаимодействия пользователей.
-				<br>
-				<br>В момент добавления основного контента в любое из полей, в корне конкретного общего поля создаётся дочерняя директория, а автор становится её директором (главным реализатором) и может назначать ей администраторов(дополнительных реализаторов), группы, права доступа и изменять их. Так же каждая дочерняя директория в конкретном поле должна обладать некоторыми обязательными атрибутами и некоторыми дополнительными. Эти атрибуты определяются исходя из тематических особенностей каждого из общих полей.
-				<br>
-				<br>
-				<br>
-				<br><b class="orange">Концепция социально-экономического отбора</b>
-				<br>основные понятия:
-				<br>
-				<br>Финансовое сообщество нового вида – это одноранговое сообщество людей организованных для эффективного взаимодействия с целью реализации интересных им идей и проектов, за счёт коллективного капитала участников, продвижения и управления ими, по средствам передовых информационных технологий и финансовых механизмов.
-				<br>
-				<br>Социально-инвестиционный круг – это неограниченное количество участников финансового сообщества нового вида, заинтересованных в реализации конкретной идеи и проекта.
-				<br>
-				<br>Активная группа (ядро обеспечения) – это оптимальное количество участников, из числа соиально-инвестиционного круга, желающих активно участвующих в реализации конкретной идеи и проекта.
-				<br>
-				<br>Профессиональная группа координации – это вспомогательно - административный ресурс финансового сообщества нового вида нанимаемый за плату из профессионалов, который может состоять как из числа участников сообщества, так и не из их числа. Основная задача профессиональное содействие обеспечение проектной деятельности активных групп.
-				<br>
-				<br>Социальная актуальность – параметр проекта, непосредственно определяемый достаточностью количества участников соиально-инвестиционного круга для реализации проекта за счёт коллективного капитала участников по принципу минимального индивидуального участия.
-				<br>
-				<br>Порог социальной актуальности – соотношение стоимости реализации проекта, и количества участников соиально-инвестиционного круга , достаточное для его реализации за счёт коллективного капитала участников по прнципу минимального индивидуального участия в финансировании.
-				<br>Коллективный капитал (участников) – это совокупная инвестиционная способность участников заинтересованных в реализации того или иного проекта.
-				<br>
-				<br>Принцип минимального индивидуального участия (в финансировании)
-				<br>– это принцип при котором полная стоимость реализации проекта распределяется на всех участников финансирования в равной степени, а объём индивидуального участия в финансировании определяется минимально возможным размером, то есть падает по мере увеличения количества участников в плоть до прохождения порога актуальности проекта.
-				<br>
-				<br>
-				<br>
-				<br><b class="orange">Взаимодействие</b>
-				<br>
-				<br>Свойсва пространств пользователей
-				<br>
-				<br>Основной функциональной рабочей областью расширяемой креативной платформы является пространство проектов. В нём происходит формирование проектов из идей сообщества, предложение интересных проектов для реализации, обсуждение проектов, и непосредственная интеллектуальная работа над реализацией и управлением проектами.
-				<br>
-				<br>Основной концепцией поля проектов является модель идея-проект-реализация то-есть конвейер, который принимает на входе актуальные идеи для коллективной реализации, формирует на их основе конкретные, готовые к реализации проекты и реализует их за счёт актуального ресурса сообщества, который формируется соотношением общего активного ресурса сообщества и количеством пользователей заинтересованных в реализации конкретного проекта.
-				<br>
-				<br>После первоначального формирования проекта, происходит обсуждение его и по мере роста интереса к проекту со стороны сообщества, Главный реализатор определяет активную группу проекта, которая и будет заниматься, главным образом, интеллектуальным ведением проекта.
-				<br>
-				<br>Финансирование проектов происходит по принципу минимального индивидуального участия, который подробно описан в концепт листе сообщества.
-				<br>Основной контент в общем пространстве проектов представляет собой социально-инвестиционный круг, состоящий из пользователей заинтересованных в реализации конкретного проекта.
-				<br>
-				<br>Круг может состоять из пользователей имеющих разное отношение к проекту, например активная группа, пассивная группа, которые в свою очередь, при необходимости, могут иметь и собственную внутренние градации.
-				<br>
-				<br>Окончательная структура круга индивидуальна и исходит из внутренних качеств проекта и внешних условий реализации. Главным отличительным качеством социально-инвестиционного круга, после окончательного формирования конкретного проекта, является безусловное единство его участников. Круг включает в себя и состоит исключительно из тех пользователей, которые заинтересованы в реализации конкретного проекта.
-				<br>
-				<br>При возникновении внутренних противоречий среди участников социально-инвестиционного круга, проводится отдельное обсуждение в специальной директории внутри круга, где выявляются основные противоречия с целью сформировать единое решение реализации проекта отвечающее интересам подавляющего большинства участников. Если этого сделать не удаётся, проект всегда можно разделить на несколько независимых и выявить наиболее актуальный из них для реализации по принципу минимального индивидуального участия в финансировании.
+				
+
+							
 			</p>
-			<p>
 		</div>		
 		
 		<a name="investors"></a>
 		<div class="text_block_scroll">
 			<h3>Инвесторам</h3>
 			<p>
-				<br><b class="orange">Уважаемые инвесторы,</b> мы рады представить нашу передовую и инновационную компанию, специализирующуюся на ИИ, распределённых вычислениях и блокчейн-решениях актуальных для общества.
+				<br>Уважаемые инвесторы, мы рады представить нашу передовую и инновационную компанию, специализирующуюся на ИИ, распределённых вычислениях и блокчейн-решениях, актуальных для общества.
 				<br>Gybernaty уже вызвал значительный интерес со стороны инвесторов, и мы готовимся к инвестиционным раундам.
 				<br>Наш первый инвестиционный раунд будет частным, специально ориентированным на крупных инвесторов и фонды. Мы рассмотрим заявки на участие, и распространим приглашения присоединиться к этому раунду. В рамках этого раунда мы стремимся привлечь значительные инвестиции для ускорения развития наших проектов.
 				<br>
 				<br>Второй инвестиционный раунд пройдет на специализированных платформах продажи токенов. В ходе этого раунда мы предложим токены GBR более широкой аудитории инвесторов. Этот раунд будет проходить в соответствии с правилами и требованиями платформ, обеспечивая защиту инвесторов и прозрачность.
 				<br>Третий и заключительный инвестиционный раунд состоится на открытом рынке мультиблочной сети. В этом раунде токены будут доступны всем заинтересованным инвесторам, что подчеркивает максимальную открытость и доступность проекта.
 				<br>
-				<br>Участие в нашем проекте дает значительные преимущества каждой категории инвесторов. Для крупных инвесторов и фондов участие в первом инвестиционном раунде предоставляет доступ к новым и многообещающим технологиям, инновационным решениям и потенциальной прибыли за счет их разработки.Для частных инвесторов второй и третий инвестиционные раунды предоставляют возможность вложить средства в перспективный и быстрорастущий проект.
+				<br>Участие в нашем проекте дает значительные преимущества каждой категории инвесторов. Для крупных инвесторов и фондов участие в первом инвестиционном раунде предоставляет доступ к новым и многообещающим технологиям, инновационным решениям и потенциальной прибыли за счет их разработки. Для частных инвесторов второй и третий инвестиционные раунды предоставляют возможность вложить средства в перспективный и быстрорастущий проект.
 				<br>Инвесторы получат токены GBR и будут иметь возможность получать прибыль от будущего повышения цены токена. В целом, наш проект обладает огромным потенциалом для инвесторов, и мы приглашаем вас присоединиться к нашей команде и внести свой вклад в развитие технологий актуальных для общества в областях: Блокчейн, SocialMedia, Распределённых Вычислений и Искусственного Интеллекта в среде открытого доступа. Инвестирование в Gybernaty дает уникальную возможность получить высокую прибыль в долгосрочной перспективе, поскольку наш проект будет продолжать развиваться в течение многих лет, обеспечивая стабильный источник дохода для инвесторов.
 				<br>
 				<br>Кроме того, использование технологии блокчейн обеспечивает безопасность инвестиций. Наш проект гарантирует полную прозрачность и безопасность для всех участников благодаря использованию технологии распределенного реестра.
@@ -461,7 +441,7 @@
 		<div id="partners_block">
 			<div class="button">
 				<div class="button_pod">
-					<button> Become a partner </button>
+					<button> <a href="mailto:gyberpartner@gyber.org?subject=Become a partner&body=Hi,I like it ....">Become a partner</a></button>
 				</div>
 			</div>
 		</div>
@@ -474,16 +454,16 @@
 				</a>
 			</div>
 			<div id="social_nets">
-				<a href="" target="_blanc" >
+				<a href="https://github.com/OpenDevCommune" target="_blanc" >
 					<img src="images/social_nets_1.png" alt="social nets">
 				</a>
-				<a href="" target="_blanc" >
+				<a href="https://t.me/gyberexperiment" target="_blanc" >
 					<img src="images/social_nets_2.png" alt="social nets">
 				</a>
-				<a href="" target="_blanc" >
+				<a href="https://discord.gg/4jEXdqt6Wv" target="_blanc" >
 					<img src="images/social_nets_3.png" alt="social nets">
 				</a>
-				<a href="" target="_blanc" >
+				<a href="https://twitter.com/gybersocial" target="_blanc" >
 					<img src="images/social_nets_4.png" alt="social nets">
 				</a>
 			</div>	
