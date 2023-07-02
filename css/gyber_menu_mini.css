@@ -6,22 +6,6 @@ body {
 
 
 
-
-#top_fix {
-	display: flex; 
-	position: fixed;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	left: 0;
-	right: 0;
-	top: 0;
-	overflow: hidden; /* scroll */
-	z-index: 10;
-}
-
-
-
 #all {
 	display: flex; 
 	position: fixed;
@@ -37,6 +21,27 @@ body {
 	scrollbar-color: #675c12  #001624 ;   
 }
 
+
+
+#top_fix {
+	display: flex; 
+	position: fixed;
+	align-items: center;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow: hidden; /* scroll */
+	z-index: 10;
+}
+
+body.norm #top_fix {
+	flex-direction: column;	
+}
+
+body.mini #top_fix {
+	flex-direction: right;		
+}
 
 #header, 
 #all .main {
@@ -60,9 +65,13 @@ body {
 	overflow: hidden;
 }
 
+body.norm #menu_top #menu_button.mini {
+	display: none;
+}
 	
-#menu_top {
+body.norm #menu_top {
 	display: flex; 
+	position: absolute;
 	flex-direction: row;
 	justify-content: space-between;
 	height: 40px;
@@ -80,13 +89,13 @@ body {
  
 }
 
-#menu_top div {
+body.norm #menu_top div {
 	font-weight: bold;
 	padding: 2px 12px;
 	margin: -1px 5px 0 5px ; 
 	cursor: pointer; 
 }
-#menu_top div.curr{
+body.norm #menu_top div.curr{
 	margin-top: -6px;
 	border-radius:     5px;
 	-moz-border-radius:   5px;  
@@ -95,6 +104,45 @@ body {
 	cursor:  grabbing; 
 	cursor:  -moz-grabbing; 
 }
+
+/*
+
+body.mini #menu_top {
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	right: 11px;
+	width: 222px;
+	height: 222px;
+	margin-top: 	20px;
+	padding: 11px 0;
+	font-size: 0.87em;
+	background: #001624;
+	border-radius:     5px;
+	-moz-border-radius:   5px;  
+	-webkit-border-radius:   5px;  
+	border: 3px solid transparent ; 
+	border-image: 					 	 linear-gradient(to right,  #6C6520, #5C6520, #326F55, #205191, #326F55, #5C6520, #6C6520 );
+	-moz-border-image: 				-moz-linear-gradient(left, 		#6C6520, #5C6520, #326F55, #205191, #326F55, #5C6520, #6C6520 );
+	-webkit-border-image:  -webkit-linear-gradientleft, (left, 		#6C6520, #5C6520, #326F55, #205191, #326F55, #5C6520, #6C6520 );
+    border-image-slice: 1;	
+
+ 
+}
+
+body.mini #menu_top div {
+	font-weight: bold;
+	padding: 2px 12px;
+	margin: -1px 5px 0 5px ; 
+	cursor: pointer; 
+}
+body.mini #menu_top div.curr{
+	background: #248;	
+	cursor:  grabbing; 
+	cursor:  -moz-grabbing; 
+}
+*/
+
 #menu_top div.hidden{
 	display: none;	
 }
@@ -107,6 +155,8 @@ body {
 #menu_top div.curr a{
 	color: #e6af09;
 }
+
+
 
 #header #header_right {
 	display: flex; 
@@ -530,6 +580,13 @@ body::-webkit-scrollbar-thumb {
 body.mini #all img.norm {
 	display: none;
 } 
+
+
+
+
+
+
+
 
 
 
