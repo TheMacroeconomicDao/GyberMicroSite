@@ -231,6 +231,9 @@ body.mini #top h1{
 	font-weight: normal;
 	color: #e6af09;
 }
+.main b.big {
+	font-size: 1.2em;
+}
 	
 .main .text_block_scroll {
 	display: flex;
