@@ -21,7 +21,25 @@ $(document).ready(function(){
 		}
 	}; 
 		
+	function reSize(){
+		let winWidth = window.innerWidth;
+	//	cl('resize: ' + winWidth);
+		if( winWidth < 917 ){ // переходим к "мобильной версии"
+			$('body').removeClass('norm')
+			$('body').addClass('mini')
+		} else {
+			$('body').removeClass('mini')
+			$('body').addClass('norm')
+			
+		}	
+		
+	}
 
+
+	$(window).resize( function(){
+		reSize();
+	});
+	
 
 	$("#menu_top a").on('click', function( e ){ 
 		let q = $(this).attr('href') ;
@@ -33,7 +51,9 @@ $(document).ready(function(){
 	$("#logo").click ( function(){ 
 		console.log( ' Its Logo '); 
 	});
+
 	
+	reSize();
 	let a = $(location).attr("href");
 	a = a.split('#');
 	a = a[1];
